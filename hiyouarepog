@@ -1,0 +1,872 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local GearsCmds = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Cmds = Instance.new("TextButton")
+local NinjaClothes = Instance.new("TextButton")
+local RayGuns = Instance.new("TextButton")
+local Vampire = Instance.new("TextButton")
+local Boombox = Instance.new("TextButton")
+local Medusa = Instance.new("TextButton")
+local Crash = Instance.new("TextButton")
+local Jail = Instance.new("TextButton")
+local Music = Instance.new("Folder")
+local TextLabel_2 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local Song4 = Instance.new("TextButton")
+local Song3 = Instance.new("TextButton")
+local Song2 = Instance.new("TextButton")
+local Song1 = Instance.new("TextButton")
+local Song5 = Instance.new("TextButton")
+local Song6 = Instance.new("TextButton")
+local Song7 = Instance.new("TextButton")
+local Song8 = Instance.new("TextButton")
+local Song9 = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.600000024, 0, 0.232999995, 0)
+Frame.Size = UDim2.new(0, 362, 0, 188)
+Frame.Visible = false
+
+GearsCmds.Name = "Gears/Cmds"
+GearsCmds.Parent = Frame
+
+TextLabel.Parent = GearsCmds
+TextLabel.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel.Position = UDim2.new(-0.00439453125, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 362, 0, 26)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "AdminSploit Gears And Cmds"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = TextLabel
+Close.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.922246158, 0, -0.00651098043, 0)
+Close.Size = UDim2.new(0, 27, 0, 27)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+ScrollingFrame.Parent = GearsCmds
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+ScrollingFrame.Position = UDim2.new(-0.00400000019, 0, 0.143999994, 0)
+ScrollingFrame.Size = UDim2.new(0, 361, 0, 161)
+ScrollingFrame.ScrollBarThickness = 5
+
+Cmds.Name = "Cmds"
+Cmds.Parent = ScrollingFrame
+Cmds.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Cmds.Position = UDim2.new(0.718821764, 0, 0.0366770774, 0)
+Cmds.Size = UDim2.new(0, 66, 0, 30)
+Cmds.Font = Enum.Font.SourceSansBold
+Cmds.Text = "Cmds"
+Cmds.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cmds.TextScaled = true
+Cmds.TextSize = 14.000
+Cmds.TextWrapped = true
+
+NinjaClothes.Name = "NinjaClothes"
+NinjaClothes.Parent = ScrollingFrame
+NinjaClothes.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+NinjaClothes.Position = UDim2.new(0.105156548, 0, 0.190932393, 0)
+NinjaClothes.Size = UDim2.new(0, 66, 0, 30)
+NinjaClothes.Font = Enum.Font.SourceSansBold
+NinjaClothes.Text = "Ninja Clothes"
+NinjaClothes.TextColor3 = Color3.fromRGB(255, 255, 255)
+NinjaClothes.TextScaled = true
+NinjaClothes.TextSize = 14.000
+NinjaClothes.TextWrapped = true
+
+RayGuns.Name = "RayGuns"
+RayGuns.Parent = ScrollingFrame
+RayGuns.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+RayGuns.Position = UDim2.new(0.408572435, 0, 0.036881648, 0)
+RayGuns.Size = UDim2.new(0, 66, 0, 30)
+RayGuns.Font = Enum.Font.SourceSansBold
+RayGuns.Text = "Ray Guns"
+RayGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+RayGuns.TextScaled = true
+RayGuns.TextSize = 14.000
+RayGuns.TextWrapped = true
+
+Vampire.Name = "Vampire"
+Vampire.Parent = ScrollingFrame
+Vampire.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Vampire.Position = UDim2.new(0.105156541, 0, 0.036881648, 0)
+Vampire.Size = UDim2.new(0, 66, 0, 30)
+Vampire.Font = Enum.Font.SourceSansBold
+Vampire.Text = "Vampire Vanquisher"
+Vampire.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vampire.TextScaled = true
+Vampire.TextSize = 14.000
+Vampire.TextWrapped = true
+
+Boombox.Name = "Boombox"
+Boombox.Parent = ScrollingFrame
+Boombox.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Boombox.Position = UDim2.new(0.407095611, 0, 0.190932393, 0)
+Boombox.Size = UDim2.new(0, 66, 0, 30)
+Boombox.Font = Enum.Font.SourceSansBold
+Boombox.Text = "BoomBox"
+Boombox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Boombox.TextScaled = true
+Boombox.TextSize = 14.000
+Boombox.TextWrapped = true
+
+Medusa.Name = "Medusa"
+Medusa.Parent = ScrollingFrame
+Medusa.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Medusa.Position = UDim2.new(0.71734494, 0, 0.190932393, 0)
+Medusa.Size = UDim2.new(0, 66, 0, 30)
+Medusa.Font = Enum.Font.SourceSansBold
+Medusa.Text = "MedusaHead"
+Medusa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Medusa.TextScaled = true
+Medusa.TextSize = 14.000
+Medusa.TextWrapped = true
+
+Crash.Name = "Crash"
+Crash.Parent = ScrollingFrame
+Crash.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Crash.Position = UDim2.new(0.104041517, 0, 0.348170221, 0)
+Crash.Size = UDim2.new(0, 66, 0, 30)
+Crash.Font = Enum.Font.SourceSansBold
+Crash.Text = "Crash Server"
+Crash.TextColor3 = Color3.fromRGB(255, 255, 255)
+Crash.TextScaled = true
+Crash.TextSize = 14.000
+Crash.TextWrapped = true
+
+Jail.Name = "Jail"
+Jail.Parent = ScrollingFrame
+Jail.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Jail.Position = UDim2.new(0.405980587, 0, 0.348170221, 0)
+Jail.Size = UDim2.new(0, 66, 0, 30)
+Jail.Font = Enum.Font.SourceSansBold
+Jail.Text = "Jail"
+Jail.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jail.TextScaled = true
+Jail.TextSize = 14.000
+Jail.TextWrapped = true
+
+Music.Name = "Music"
+Music.Parent = Frame
+
+TextLabel_2.Parent = Music
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel_2.Position = UDim2.new(-0.00439453125, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 362, 0, 26)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "AdminSploit Music"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = TextLabel_2
+Close_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Close_2.BackgroundTransparency = 1.000
+Close_2.Position = UDim2.new(0.922246158, 0, -0.00651098043, 0)
+Close_2.Size = UDim2.new(0, 27, 0, 27)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+ScrollingFrame_2.Parent = Music
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+ScrollingFrame_2.Position = UDim2.new(-0.00439453172, 0, 0.143617034, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 361, 0, 161)
+ScrollingFrame_2.Visible = false
+ScrollingFrame_2.ScrollBarThickness = 5
+
+Song4.Name = "Song4"
+Song4.Parent = ScrollingFrame_2
+Song4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song4.Position = UDim2.new(0.0927829742, 0, 0.214868575, 0)
+Song4.Size = UDim2.new(0, 66, 0, 30)
+Song4.Font = Enum.Font.SourceSansBold
+Song4.Text = "Albert Scream"
+Song4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song4.TextScaled = true
+Song4.TextSize = 14.000
+Song4.TextWrapped = true
+
+Song3.Name = "Song3"
+Song3.Parent = ScrollingFrame_2
+Song3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song3.Position = UDim2.new(0.728425264, 0, 0.0446557999, 0)
+Song3.Size = UDim2.new(0, 66, 0, 30)
+Song3.Font = Enum.Font.SourceSansBold
+Song3.Text = "Korean Rage"
+Song3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song3.TextScaled = true
+Song3.TextSize = 14.000
+Song3.TextWrapped = true
+
+Song2.Name = "Song2"
+Song2.Parent = ScrollingFrame_2
+Song2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song2.Position = UDim2.new(0.416882694, 0, 0.0448603705, 0)
+Song2.Size = UDim2.new(0, 66, 0, 30)
+Song2.Font = Enum.Font.SourceSansBold
+Song2.Text = "Terraria - Day"
+Song2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song2.TextScaled = true
+Song2.TextSize = 14.000
+Song2.TextWrapped = true
+
+Song1.Name = "Song1"
+Song1.Parent = ScrollingFrame_2
+Song1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song1.Position = UDim2.new(0.0940761417, 0, 0.0469011068, 0)
+Song1.Size = UDim2.new(0, 66, 0, 30)
+Song1.Font = Enum.Font.SourceSansBold
+Song1.Text = "Sunshine"
+Song1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song1.TextScaled = true
+Song1.TextSize = 14.000
+Song1.TextWrapped = true
+
+Song5.Name = "Song5"
+Song5.Parent = ScrollingFrame_2
+Song5.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song5.Position = UDim2.new(0.407095611, 0, 0.214868546, 0)
+Song5.Size = UDim2.new(0, 66, 0, 30)
+Song5.Font = Enum.Font.SourceSansBold
+Song5.Text = "Stoopid"
+Song5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song5.TextScaled = true
+Song5.TextSize = 14.000
+Song5.TextWrapped = true
+
+Song6.Name = "Song6"
+Song6.Parent = ScrollingFrame_2
+Song6.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song6.Position = UDim2.new(0.728425264, 0, 0.214868546, 0)
+Song6.Size = UDim2.new(0, 66, 0, 30)
+Song6.Font = Enum.Font.SourceSansBold
+Song6.Text = "Triggered"
+Song6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song6.TextScaled = true
+Song6.TextSize = 14.000
+Song6.TextWrapped = true
+
+Song7.Name = "Song7"
+Song7.Parent = ScrollingFrame_2
+Song7.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song7.Position = UDim2.new(0.0940762162, 0, 0.374442995, 0)
+Song7.Size = UDim2.new(0, 66, 0, 30)
+Song7.Font = Enum.Font.SourceSansBold
+Song7.Text = "Megalovania"
+Song7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song7.TextScaled = true
+Song7.TextSize = 14.000
+Song7.TextWrapped = true
+
+Song8.Name = "Song8"
+Song8.Parent = ScrollingFrame_2
+Song8.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song8.Position = UDim2.new(0.415405869, 0, 0.374442995, 0)
+Song8.Size = UDim2.new(0, 66, 0, 30)
+Song8.Font = Enum.Font.SourceSansBold
+Song8.Text = "Dream Meme"
+Song8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song8.TextScaled = true
+Song8.TextSize = 14.000
+Song8.TextWrapped = true
+
+Song9.Name = "Song9"
+Song9.Parent = ScrollingFrame_2
+Song9.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song9.Position = UDim2.new(0.733965397, 0, 0.369123846, 0)
+Song9.Size = UDim2.new(0, 66, 0, 30)
+Song9.Font = Enum.Font.SourceSansBold
+Song9.Text = "WIP"
+Song9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song9.TextScaled = true
+Song9.TextSize = 14.000
+Song9.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Open.Position = UDim2.new(0.94954592, 0, 0.759197354, 0)
+Open.Size = UDim2.new(0, 50, 0, 27)
+Open.Font = Enum.Font.SourceSansBold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function JJAPDS_fake_script() -- Close.CloseScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(JJAPDS_fake_script)()
+local function ZMFZLGU_fake_script() -- Cmds.LocalScript 
+	local script = Instance.new('LocalScript', Cmds)
+
+	function Click(mouse)
+	
+		print("MGui" )
+		print("GGui" )
+		print("amogus (plrname or yours)" )
+		print("sonic (plrname or yours)" )
+		print("bear (plrname or yours)" )
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Notice!";
+			Text = "Check console (F9) for a list of commands!";
+			Duration = 5;
+		})	
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(ZMFZLGU_fake_script)()
+local function IAKDRRQ_fake_script() -- NinjaClothes.LocalScript 
+	local script = Instance.new('LocalScript', NinjaClothes)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("pants me 0000000000000000004942071337")) 
+		game:GetService'Players':Chat(("shirt me 0000000000000000004941942485"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(IAKDRRQ_fake_script)()
+local function RXDAHX_fake_script() -- RayGuns.LocalScript 
+	local script = Instance.new('LocalScript', RayGuns)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 000000000000000000130113146")) 
+		game:GetService'Players':Chat(("gear me 000000000000000000212296936"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(RXDAHX_fake_script)()
+local function BCTS_fake_script() -- Vampire.LocalScript 
+	local script = Instance.new('LocalScript', Vampire)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 00000000000000000094794847")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(BCTS_fake_script)()
+local function MFKWR_fake_script() -- Boombox.LocalScript 
+	local script = Instance.new('LocalScript', Boombox)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 000000000000000000212641536")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(MFKWR_fake_script)()
+local function OYBUPSZ_fake_script() -- Medusa.LocalScript 
+	local script = Instance.new('LocalScript', Medusa)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 00000000000000000089487934")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(OYBUPSZ_fake_script)()
+local function LEMYVR_fake_script() -- Crash.LocalScript 
+	local script = Instance.new('LocalScript', Crash)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("m/Dont worry")) 
+		wait(1.7)
+		game:GetService'Players':Chat(("clr"))
+		wait(1)
+		game:GetService'Players':Chat(("m/I already know im cool"))
+		wait(1.7)
+		game:GetService'Players':Chat(("clr"))
+		wait(1)
+		game:GetService'Players':Chat(("music 0000000000000000000000000000000000000000000000000000000001008645583"))
+		wait(1)
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait()
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait()
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait()
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait()
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait()
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000094794847"))
+		wait(.4)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.VampireVanquisher)
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+		wait(.1)
+		game:GetService'Players':Chat(("size me 0.3"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(LEMYVR_fake_script)()
+local function OZBCJBU_fake_script() -- Jail.LocalScript 
+	local script = Instance.new('LocalScript', Jail)
+
+	function Click(mouse)
+		
+		
+		game:GetService'Players':Chat(("gear me 00000000000000000000000000000000000000000000000000000000082357101"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(OZBCJBU_fake_script)()
+local function QBHR_fake_script() -- Close_2.CloseScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(QBHR_fake_script)()
+local function WCYS_fake_script() -- Song4.LocalScript 
+	local script = Instance.new('LocalScript', Song4)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 0000000000000000004895163759"))	
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(WCYS_fake_script)()
+local function BNMH_fake_script() -- Song3.LocalScript 
+	local script = Instance.new('LocalScript', Song3)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000445095775")) 
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(BNMH_fake_script)()
+local function BZIM_fake_script() -- Song2.LocalScript 
+	local script = Instance.new('LocalScript', Song2)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000153676740")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(BZIM_fake_script)()
+local function WMZQQU_fake_script() -- Song1.LocalScript 
+	local script = Instance.new('LocalScript', Song1)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000555604342")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(WMZQQU_fake_script)()
+local function TNGL_fake_script() -- Song5.LocalScript 
+	local script = Instance.new('LocalScript', Song5)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 0000000000000000004728506477")) 
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(TNGL_fake_script)()
+local function MSTDL_fake_script() -- Song6.LocalScript 
+	local script = Instance.new('LocalScript', Song6)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000606862847")) 
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(MSTDL_fake_script)()
+local function IFIVJ_fake_script() -- Song7.LocalScript 
+	local script = Instance.new('LocalScript', Song7)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 0000000000000000006573201800"))
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(IFIVJ_fake_script)()
+local function SXQBGT_fake_script() -- Song8.LocalScript 
+	local script = Instance.new('LocalScript', Song8)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 0000000000000000002837728511")) 
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(SXQBGT_fake_script)()
+local function VCSSZI_fake_script() -- Song9.LocalScript 
+	local script = Instance.new('LocalScript', Song9)
+
+	function Click(mouse)
+	
+		
+		
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(VCSSZI_fake_script)()
+local function HOGWFR_fake_script() -- ScreenGui.DraggableScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(HOGWFR_fake_script)()
+local function CVJC_fake_script() -- ScreenGui.ChatTriggerGuis 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if string.sub(msg:lower(), 0, 20) == "mgui" then
+			script.parent.Frame.Music.ScrollingFrame.Visible = true
+			script.parent.Frame["Gears/Cmds"].ScrollingFrame.Visible = false
+			script.parent.Frame.Music.TextLabel.Visible = true
+			script.parent.Frame["Gears/Cmds"].TextLabel.Visible = false
+		end
+		if string.sub(msg:lower(), 0, 20) == "ggui" then
+			script.parent.Frame.Music.ScrollingFrame.Visible = false
+			script.parent.Frame["Gears/Cmds"].ScrollingFrame.Visible = true
+			script.parent.Frame.Music.TextLabel.Visible = false
+			script.parent.Frame["Gears/Cmds"].TextLabel.Visible = true
+		end
+		if string.sub(msg:lower(), 0, 20) == "acmds" then
+			local Screen = Instance.new("ScreenGui")
+			local MainFrame = Instance.new("Frame")
+			local TopTextFrame = Instance.new("Frame")
+			local Title = Instance.new("TextLabel")
+			local Close = Instance.new("TextButton")
+			local ACmdsFrame = Instance.new("ScrollingFrame")
+			local Sonic = Instance.new("TextLabel")
+			local Amogus = Instance.new("TextLabel")
+			local Bear = Instance.new("TextLabel")
+			local Discord = Instance.new("TextLabel")
+	
+			Screen.Name = "Screen"
+			Screen.Parent = game.CoreGui
+			Screen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+			Screen.ResetOnSpawn = false
+	
+			MainFrame.Name = "MainFrame"
+			MainFrame.Parent = Screen
+			MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			MainFrame.BackgroundTransparency = 1.000
+			MainFrame.Position = UDim2.new(0.315842628, 0, 0.134831458, 0)
+			MainFrame.Size = UDim2.new(0, 376, 0, 375)
+	
+			TopTextFrame.Name = "TopTextFrame"
+			TopTextFrame.Parent = MainFrame
+			TopTextFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+			TopTextFrame.Size = UDim2.new(0, 375, 0, 38)
+	
+			Title.Name = "Title"
+			Title.Parent = TopTextFrame
+			Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Title.BackgroundTransparency = 1.000
+			Title.Size = UDim2.new(0, 374, 0, 38)
+			Title.Font = Enum.Font.SourceSansBold
+			Title.Text = "ACmds"
+			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.TextScaled = true
+			Title.TextSize = 14.000
+			Title.TextWrapped = true
+	
+			Close.Name = "Close"
+			Close.Parent = TopTextFrame
+			Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Close.BackgroundTransparency = 1.000
+			Close.Position = UDim2.new(0.922666669, 0, 0, 0)
+			Close.Size = UDim2.new(0, 28, 0, 28)
+			Close.Font = Enum.Font.SourceSansBold
+			Close.Text = "X"
+			Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+			Close.TextScaled = true
+			Close.TextSize = 14.000
+			Close.TextWrapped = true
+	
+			ACmdsFrame.Name = "ACmdsFrame"
+			ACmdsFrame.Parent = MainFrame
+			ACmdsFrame.Active = true
+			ACmdsFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			ACmdsFrame.Position = UDim2.new(0, 0, 0.101333335, 0)
+			ACmdsFrame.Size = UDim2.new(0, 375, 0, 337)
+	
+			Sonic.Name = "Sonic"
+			Sonic.Parent = ACmdsFrame
+			Sonic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Sonic.BackgroundTransparency = 1.000
+			Sonic.Position = UDim2.new(0.0933333337, 0, 0.0285103861, 0)
+			Sonic.Size = UDim2.new(0, 295, 0, 50)
+			Sonic.Font = Enum.Font.SourceSansBold
+			Sonic.Text = "sonic (plrname or yours) -- Makes you sonic"
+			Sonic.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Sonic.TextSize = 14.000
+			Sonic.TextWrapped = true
+	
+			Amogus.Name = "Amogus"
+			Amogus.Parent = ACmdsFrame
+			Amogus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Amogus.BackgroundTransparency = 1.000
+			Amogus.Position = UDim2.new(0.104000002, 0, 0.123177052, 0)
+			Amogus.Size = UDim2.new(0, 295, 0, 50)
+			Amogus.Font = Enum.Font.SourceSansBold
+			Amogus.Text = "amogus (plrname or yours) -- Makes you the imposter"
+			Amogus.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Amogus.TextSize = 14.000
+			Amogus.TextWrapped = true
+	
+			Bear.Name = "Bear"
+			Bear.Parent = ACmdsFrame
+			Bear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Bear.BackgroundTransparency = 1.000
+			Bear.Position = UDim2.new(0.106666669, 0, 0.219177052, 0)
+			Bear.Size = UDim2.new(0, 295, 0, 50)
+			Bear.Font = Enum.Font.SourceSansBold
+			Bear.Text = "bear  (plrname or yours) -- Makes you a bear"
+			Bear.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Bear.TextSize = 14.000
+			Bear.TextWrapped = true
+	
+			Discord.Name = "Discord"
+			Discord.Parent = ACmdsFrame
+			Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Discord.BackgroundTransparency = 1.000
+			Discord.Position = UDim2.new(0.106666669, 0, 0.307177067, 0)
+			Discord.Size = UDim2.new(0, 295, 0, 50)
+			Discord.Font = Enum.Font.SourceSansBold
+			Discord.Text = "This is still a wip, if you want notifactions on when it gets updated then add me on discord Disturber#3477"
+			Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Discord.TextSize = 14.000
+			Discord.TextWrapped = true
+	
+			local function HDFBZRB_fake_script() -- Close.LocalScript 
+				local script = Instance.new('LocalScript', Close)
+	
+				script.Parent.MouseButton1Down:connect(function()
+					script.Parent.Parent.Parent.Parent.MainFrame.Visible = false
+				end)
+			end
+			coroutine.wrap(HDFBZRB_fake_script)()
+		end
+		end)
+end
+coroutine.wrap(CVJC_fake_script)()
+local function JIYEQW_fake_script() -- ScreenGui.Credits 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	warn("Credits")
+	wait(0.5)
+	print("AdminSploit Made by nota_rareusername")
+	wait(0.5)
+	print("Hope you enjoy")
+	wait(0.5)
+	print("Contact my discord if any fixes are needed, Disturber#3477")
+	wait(0.5)
+	print("Credits to Humangas for helping make the opening and closing scripts")
+end
+coroutine.wrap(JIYEQW_fake_script)()
+local function DZGY_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(DZGY_fake_script)()
+local function VECSMAU_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+	
+		if string.sub(msg, 0, 5) == "sonic" then
+			game.Players:Chat("paint "..string.sub(msg, 7).." light brown")
+			wait()
+			game.Players:Chat("removehats "..string.sub(msg, 7))
+			wait()
+			game.Players:Chat("unpackage "..string.sub(msg, 7))
+			wait()
+			game.Players:Chat("shirt "..string.sub(msg, 7).." 6644674218")
+			wait()
+			game.Players:Chat("pants "..string.sub(msg, 7).." 4650404723")
+			wait()
+			game.Players:Chat("hat "..string.sub(msg, 7).." 5064368031")
+			wait()
+			game.Players:Chat("speed "..string.sub(msg, 7).." 50")
+		end
+	
+		if string.sub(msg, 0, 6) == "amogus" then
+			game.Players:Chat("paint "..string.sub(msg, 8).." really red")
+			wait()
+			game.Players:Chat("removehats "..string.sub(msg, 8))
+			wait()
+			game.Players:Chat("unpackage "..string.sub(msg, 8))
+			wait()
+			game.Players:Chat("shirt "..string.sub(msg, 8).." 6567651507")
+			wait()
+			game.Players:Chat("pants "..string.sub(msg, 8).." 6600049969")
+			wait()
+			game.Players:Chat("gear "..string.sub(msg, 8).." 121946387")
+		end
+		
+		if string.sub(msg, 0, 4) == "bear" then
+			game.Players:Chat("paint "..string.sub(msg, 6).." reddish brown")
+			wait()
+			game.Players:Chat("removehats "..string.sub(msg, 6))
+			wait()
+			game.Players:Chat("unpackage "..string.sub(msg, 6))
+			wait()
+			game.Players:Chat("shirt "..string.sub(msg, 6).." 5572621759")
+			wait()
+			game.Players:Chat("pants "..string.sub(msg, 6).." 5486253834")
+			wait()
+			game.Players:Chat("gear "..string.sub(msg, 6).." 295460702")
+		end
+	end)
+end
+coroutine.wrap(VECSMAU_fake_script)()
+local function DJAEZB_fake_script() -- ScreenGui.LoadingNotifcation 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Executed!";
+		Text = "The script is loading please wait 3 seconds";
+		Duration = 5;
+	})	
+	wait(3)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Script loaded!";
+		Text = "Have fun!";
+		Duration = 5;
+	})
+	wait()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Cmds";
+		Text = "Type GGui or type ACmds for a list of commands!";
+		Duration = 5;
+	})	
+end
+coroutine.wrap(DJAEZB_fake_script)()
+local function OCHATZY_fake_script() -- ScreenGui.AnotherScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	if command == "iy" then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+	
+	if command == "dex" then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end
+end
+coroutine.wrap(OCHATZY_fake_script)()
